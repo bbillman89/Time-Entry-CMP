@@ -1,0 +1,37 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+  align-items: stretch;
+}
+
+.c-flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav {
+  width: 20%;
+  background-color: black;
+}
+
+.content {
+  width: 80%;
+  padding: 20pt;
+}
+
+.filter-wrap {
+  background: #dde4ef;
+  height: 100pt;
+  width: 100%;
+}
+
+.list-wrap {
+  background-color: #f1f1f2;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

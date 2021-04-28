@@ -7,7 +7,41 @@ $secondary-tint: #dde4ef;
 $header-font: url('/assets/fonts/BoxedSemibold.otf');
 $body-font: url('/assets/fonts/BoxedLight.otf');
 
-.d-flex {
-    display: flex;
+html,body {
+    height: 100%;
+    margin: 0;
 }
 
+.d-flex {
+    display: flex;
+    align-items: stretch;
+}
+
+.c-flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-nav {
+    width: 20%;
+    background-color: $primary-color;
+}
+
+.content {
+    width: 80%;
+    padding: 20pt;
+}
+
+.sub-nav {
+}
+
+.filter-wrap {
+    background: $secondary-tint;
+    height: 100pt;
+    width: 100%;
+}
+
+.list-wrap {
+    background-color: $primary-tint;
+    width: 100%;
+}
