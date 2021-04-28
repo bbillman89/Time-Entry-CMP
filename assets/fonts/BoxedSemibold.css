@@ -1,0 +1,12 @@
+/* Webfont: BoxedSemibold */@font-face {
+    font-family: 'BoxedSemibold';
+    src: url('BoxedSemibold.eot'); /* IE9 Compat Modes */
+    src: url('BoxedSemibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('BoxedSemibold.woff') format('woff'), /* Modern Browsers */
+         url('BoxedSemibold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('BoxedSemibold.svg#BoxedSemibold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
