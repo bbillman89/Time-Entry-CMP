@@ -1,10 +1,43 @@
+@font-face {
+  font-family: "BoxedSemibold";
+  src: url("/assets/fonts/BoxedSemibold.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/BoxedSemibold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/BoxedSemibold.woff") format("woff"), url("/assets/fonts/BoxedSemibold.ttf") format("truetype"), url("/assets/fonts/BoxedSemibold.svg#BoxedSemibold") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "BoxedLight";
+  src: url("/assets/fonts/BoxedLight.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/BoxedLight.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/BoxedLight.woff") format("woff"), url("/assets/fonts/BoxedLight.ttf") format("truetype"), url("/assets/fonts/BoxedLight.svg#BoxedLight") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
 html, body {
   height: 100%;
   margin: 0;
+  font-family: BoxedSemibold;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 .d-flex {
   display: flex;
+}
+
+.r-flex {
+  flex-direction: row;
   align-items: stretch;
 }
 
@@ -18,9 +51,19 @@ html, body {
   background-color: black;
 }
 
+.main-nav li a {
+  color: white;
+  font-family: BoxedLight;
+}
+
 .content {
   width: 80%;
   padding: 20pt;
+}
+
+.sub-nav {
+  height: 75pt;
+  padding: 20pt 0;
 }
 
 .filter-wrap {
