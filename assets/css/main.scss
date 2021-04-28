@@ -1,22 +1,22 @@
 @font-face {
-    font-family: 'BoxedSemibold';
-    src: url('/assets/fonts/BoxedSemibold.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/BoxedSemibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/BoxedSemibold.woff') format('woff'), /* Modern Browsers */
-         url('/assets/fonts/BoxedSemibold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/assets/fonts/BoxedSemibold.svg#BoxedSemibold') format('svg'); /* Legacy iOS */
+    font-family: 'BoxedSemibold', Arial, Helvetica, sans-serif;
+    src: url('../fonts/BoxedSemibold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/BoxedSemibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/BoxedSemibold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/BoxedSemibold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/BoxedSemibold.svg#BoxedSemibold') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'BoxedLight';
-    src: url('/assets/fonts/BoxedLight.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/BoxedLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/BoxedLight.woff') format('woff'), /* Modern Browsers */
-         url('/assets/fonts/BoxedLight.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/assets/fonts/BoxedLight.svg#BoxedLight') format('svg'); /* Legacy iOS */
+    font-family: 'BoxedLight', Arial, Helvetica, sans-serif;
+    src: url('../fonts/BoxedLight.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/BoxedLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/BoxedLight.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/BoxedLight.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/BoxedLight.svg#BoxedLight') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -24,6 +24,10 @@
 
 $header-font: BoxedSemibold;
 $body-font: BoxedLight;
+
+$header-size: 14pt;
+$sub-header-size: 12pt;
+$body-size: 10pt;
 
 $primary-color: black;
 $primary-tint: #f1f1f2;
@@ -36,7 +40,8 @@ $topbottom-padding: 20pt 0;
 html,body {
     height: 100%;
     margin: 0;
-    font-family: $header-font;
+    font-family: $body-font;
+    font-size: $body-size;
 }
 
 a {
@@ -68,7 +73,11 @@ li {
 
 .main-nav li a {
     color: white;
-    font-family: $body-font;
+    font-size: $header-size;
+}
+
+.sub-nav li a {
+    display: inline-block;
 }
 
 .content {
