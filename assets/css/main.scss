@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'BoxedSemibold', Arial, Helvetica, sans-serif;
+    font-family: 'BoxedSemibold';
     src: url('../fonts/BoxedSemibold.eot'); /* IE9 Compat Modes */
     src: url('../fonts/BoxedSemibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
          url('../fonts/BoxedSemibold.woff') format('woff'), /* Modern Browsers */
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'BoxedLight', Arial, Helvetica, sans-serif;
+    font-family: 'BoxedLight';
     src: url('../fonts/BoxedLight.eot'); /* IE9 Compat Modes */
     src: url('../fonts/BoxedLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
          url('../fonts/BoxedLight.woff') format('woff'), /* Modern Browsers */
@@ -22,8 +22,8 @@
     text-rendering: optimizeLegibility;
 }
 
-$header-font: BoxedSemibold;
-$body-font: BoxedLight;
+$header-font: BoxedSemibold, Arial, Helvetica, sans-serif;
+$body-font: BoxedLight, Arial, Helvetica, sans-serif;
 
 $header-size: 14pt;
 $sub-header-size: 12pt;

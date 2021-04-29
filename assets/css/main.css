@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "BoxedSemibold", Arial, Helvetica, sans-serif;
+  font-family: "BoxedSemibold";
   src: url("../fonts/BoxedSemibold.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/BoxedSemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/BoxedSemibold.woff") format("woff"), url("../fonts/BoxedSemibold.ttf") format("truetype"), url("../fonts/BoxedSemibold.svg#BoxedSemibold") format("svg");
@@ -9,7 +9,7 @@
   text-rendering: optimizeLegibility;
 }
 @font-face {
-  font-family: "BoxedLight", Arial, Helvetica, sans-serif;
+  font-family: "BoxedLight";
   src: url("../fonts/BoxedLight.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/BoxedLight.eot?#iefix") format("embedded-opentype"), url("../fonts/BoxedLight.woff") format("woff"), url("../fonts/BoxedLight.ttf") format("truetype"), url("../fonts/BoxedLight.svg#BoxedLight") format("svg");
@@ -21,7 +21,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: BoxedLight;
+  font-family: BoxedLight, Arial, Helvetica, sans-serif;
   font-size: 10pt;
 }
 
