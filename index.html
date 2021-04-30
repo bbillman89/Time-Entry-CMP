@@ -74,17 +74,25 @@
             </article>
             <article class="list-wrap flex-item">
                 <div class="d-flex r-flex" id="add-entry-wrap">
-                    <input list="job-list" placeholder="Start typing">
+                    <input list="job-list" placeholder="Enter Job Number">
                     <div id="client-display">
                         Walk On’s Bistreaux & Bar - Corporate
                     </div>
                     <input type="date">
                     <input type="number" placeholder="Enter hours">
-                    <input list="type-of-work">
+                    <input list="type-of-work" placeholder="Type of work">
                         <datalist id="type-of-work">
                             <option>Design</option>
                             <option>Typesetting</option>
                         </datalist>
+                    <input list="proof-sent" placeholder="Sent proof?">
+                        <datalist id="proof-sent">
+                            <option>Yes</option>
+                            <option>No</option>
+                        </datalist>
+                    <button class="button" id="add-button">
+                        Add
+                    </button>
                 </div>
             </article>
         </main>

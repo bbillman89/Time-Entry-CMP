@@ -107,6 +107,11 @@ li {
         align-self: flex-end;
     }
 
+    #add-button {
+        background-color: $accent-color;
+        margin: 0 20pt;
+    }
+
 .main-nav {
     width: 200pt;
     background-color: $primary-color;
@@ -238,4 +243,17 @@ li {
             background-color: white;
             height: 65pt;
             flex: 1;
+            margin: 20pt;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #add-entry-wrap input,
+        #add-entry-wrap #client-display {
+            flex: 1;
+            margin: 0 0 0 20pt;
+        }
+
+        #add-entry-wrap #client-display {
+            flex: 2;
         }

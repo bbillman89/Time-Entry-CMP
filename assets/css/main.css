@@ -84,8 +84,13 @@ li {
   font-size: 14pt;
   height: 35pt;
   width: 100pt;
-  margin: 0 20pt 20pt;
+  margin: 0 20pt 21pt;
   align-self: flex-end;
+}
+
+#add-button {
+  background-color: #c59d09;
+  margin: 0 20pt;
 }
 
 .main-nav {
@@ -213,6 +218,25 @@ li {
   flex-grow: 1;
   background-color: #f1f1f2;
   margin-bottom: 0;
+}
+
+#add-entry-wrap {
+  background-color: white;
+  height: 65pt;
+  flex: 1;
+  margin: 20pt;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add-entry-wrap input,
+#add-entry-wrap #client-display {
+  flex: 1;
+  margin: 0 0 0 20pt;
+}
+
+#add-entry-wrap #client-display {
+  flex: 2;
 }
 
 /*# sourceMappingURL=main.css.map */
