@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <HTML>
     <HEAD>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
         <link href="assets/css/main.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/bb6631012b.js" crossorigin="anonymous"></script>
     </HEAD>
@@ -30,7 +31,7 @@
                 </div>
             </nav>
             <article class="filter-wrap flex-item d-flex r-flex">
-                <div class="filter-option">
+                <div class="filter-option d-flex c-flex">
                     <h1 class="filter-label">
                         Filter by Client
                     </h1>
@@ -41,7 +42,7 @@
                             <option>CC</option>
                         </datalist>
                 </div>
-                <div class="filter-option">
+                <div class="filter-option d-flex c-flex">
                     <h1 class="filter-label">
                         Filter by Job #
                     </h1>
@@ -54,7 +55,7 @@
                             <option>44</option>
                         </datalist>
                 </div>
-                <div class="filter-option">
+                <div class="filter-option d-flex c-flex">
                     <h1 class="filter-label">
                         Filter by Job Status
                     </h1>
@@ -72,7 +73,19 @@
                 </button>
             </article>
             <article class="list-wrap flex-item">
-
+                <div class="d-flex r-flex" id="add-entry-wrap">
+                    <input list="job-list" placeholder="Start typing">
+                    <div id="client-display">
+                        Walk On’s Bistreaux & Bar - Corporate
+                    </div>
+                    <input type="date">
+                    <input type="number" placeholder="Enter hours">
+                    <input list="type-of-work">
+                        <datalist id="type-of-work">
+                            <option>Design</option>
+                            <option>Typesetting</option>
+                        </datalist>
+                </div>
             </article>
         </main>
     </body>

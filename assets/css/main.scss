@@ -103,7 +103,7 @@ li {
         font-size: $header-size;
         height: 35pt;
         width: 100pt;
-        margin: 0 20pt 20pt;
+        margin: 0 20pt 21pt;
         align-self: flex-end;
     }
 
@@ -233,3 +233,9 @@ li {
         background-color: $primary-tint;
         margin-bottom: 0;
     }
+
+        #add-entry-wrap {
+            background-color: white;
+            height: 65pt;
+            flex: 1;
+        }
