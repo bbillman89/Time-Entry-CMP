@@ -2,6 +2,7 @@
 <HTML>
     <HEAD>
         <link href="assets/css/main.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/bb6631012b.js" crossorigin="anonymous"></script>
     </HEAD>
     <body class="d-flex r-flex">
         <nav class="main-nav r-flex">
@@ -15,19 +16,60 @@
         </nav>
         <main class="content d-flex c-flex">
             <nav class="sub-nav flex-item d-flex r-flex">
-                <ul class="breadcrumb">
-                    <a href=""><li id="pg-name">Time Entry</li></a>
-                    <a href=""><li id="dept-name">Digital Solutions</li></a>
-                    <a href=""><li id="user-name">Brett Billman</li></a>
+                <ul class="breadcrumb d-flex r-flex">
+                    <li id="pg-name"><a href="">Time Entry</a></li>
+                    <li id="dept-name"><a href="">Digital Solutions</a></li>
+                    <li id="user-name"><a href="">Brett Billman</a></li>
                 </ul>
+                <div class="d-flex r-flex" id="account-wrap">
+                    <i class="fas fa-user-circle"></i>
+                    <div id="account-name">
+                        Brett Billman
+                    </div>
+                    <i class="fas fa-angle-down"></i>
+                </div>
             </nav>
             <article class="filter-wrap flex-item d-flex r-flex">
                 <div class="filter-option">
                     <h1 class="filter-label">
-                        Search by Job #
+                        Filter by Client
                     </h1>
-                    <input>
+                    <input list="client-list" placeholder="Start typing...">
+                        <datalist id="client-list">
+                            <option>AA</option>
+                            <option>BB</option>
+                            <option>CC</option>
+                        </datalist>
                 </div>
+                <div class="filter-option">
+                    <h1 class="filter-label">
+                        Filter by Job #
+                    </h1>
+                    <input list="job-list" placeholder="Start typing...">
+                        <datalist id="job-list">
+                            <option>00</option>
+                            <option>11</option>
+                            <option>22</option>
+                            <option>33</option>
+                            <option>44</option>
+                        </datalist>
+                </div>
+                <div class="filter-option">
+                    <h1 class="filter-label">
+                        Filter by Job Status
+                    </h1>
+                    <input list="job-status-list" placeholder="Start typing...">
+                        <datalist id="job-status-list">
+                            <option>Art Department</option>
+                            <option>Proofout</option>
+                            <option>Billed</option>
+                            <option>Shipping</option>
+                            <option>Producion</option>
+                        </datalist>
+                </div>
+                <button class="button" id="filter-button">
+                    Clear
+                </button>
             </article>
             <article class="list-wrap flex-item">
 
