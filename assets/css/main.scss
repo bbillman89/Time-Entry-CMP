@@ -105,6 +105,10 @@ li {
     width: 75pt;
 }
 
+    .list-column-value .button {
+        width: 70%;
+    }
+
     #filter-button {
         background-color: $secondary-color;
         font-size: $header-size;
@@ -119,9 +123,9 @@ li {
         margin: 0 20pt;
     }
 
-    .b-delete {
-        width: 35pt;
+    .list-column-value .button.b-delete {
         margin: 0 0 0 10pt;
+        width: 30%;
     }
 
     .button i {
