@@ -103,7 +103,22 @@ li {
     background-color: black;
     height: 25pt;
     width: 75pt;
+    cursor: pointer;
 }
+
+    .button i {
+        color: white;
+    }
+
+    #account-wrap .button i {
+        color: black;
+    }
+
+    #account-wrap .button {
+        width: 20pt;
+        background-color: unset;
+        margin: 0;
+    }
 
     .list-column-value .button {
         width: 70%;
@@ -126,10 +141,6 @@ li {
     .list-column-value .button.b-delete {
         margin: 0 0 0 10pt;
         width: 30%;
-    }
-
-    .button i {
-        color: white;
     }
 
 .main-nav {
@@ -229,7 +240,12 @@ li {
             #account-name {
                 font-family: $header-font;
                 font-size: $header-size;
-                margin: 0 5pt 0 10pt;
+                margin: 0 3pt 0 10pt;
+            }
+
+            #account-options {
+                background-color: violet;
+                height: 50pt;
             }
 
     #filter-wrap {
